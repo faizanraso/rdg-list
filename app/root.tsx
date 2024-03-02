@@ -1,6 +1,8 @@
-import "~/tailwind.css";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
+import { SpeedInsights } from "@vercel/speed-insights/remix";
+import { Analytics } from "@vercel/analytics/react";
+import "~/tailwind.css";
 import {
   Links,
   LiveReload,
@@ -28,6 +30,8 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
