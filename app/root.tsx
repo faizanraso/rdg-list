@@ -2,7 +2,6 @@ import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import { SpeedInsights } from "@vercel/speed-insights/remix";
 import { Analytics } from "@vercel/analytics/react";
-import "~/tailwind.css";
 import {
   Links,
   LiveReload,
@@ -11,6 +10,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+
+import "~/tailwind.css";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -25,7 +26,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-neutral-900">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -1,41 +1,21 @@
 import type { MetaFunction } from "@remix-run/node";
+import Navbar from "~/components/navbar";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "rdg-list" },
+    {
+      title:
+        "Reading List - A place to store the things you want to check out later.",
+    },
     { name: "Welcome Page", content: "Welcome to rdg-list!" },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="text-xl font-mono">
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="px-96 py-40 bg-neutral-900 h-screen">
+      <Navbar />
+      <main>test</main>
     </div>
   );
 }
