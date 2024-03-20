@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutBody() {
   return (
-    <main className="py-12 tracking-wide">
+    <main className="pt-12 pb-4 tracking-wide">
       <div className="text-justify py-2.5">
         <div className="py-1">
           <p className="leading-relaxed text-neutral-200 text-sm">
@@ -53,6 +53,30 @@ export default function AboutBody() {
               open source
             </a>
             .
+          </p>
+        </div>
+      </div>
+      <div className="text-justify py-2.5">
+        <div className="py-1">
+          <p className="leading-relaxed text-neutral-200 text-sm">Credits</p>
+        </div>
+        <div className="py-1">
+          <p className="leading-relaxed text-neutral-400 text-sm font-light">
+            <ul className="flex flex-row gap-x-4">
+              <li>
+                <a href="https://lucide.dev/license" className="underline">
+                  Lucide License
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/iconoir-icons/iconoir/blob/main/LICENSE"
+                  className="underline"
+                >
+                  Iconair License
+                </a>
+              </li>
+            </ul>
           </p>
         </div>
       </div>

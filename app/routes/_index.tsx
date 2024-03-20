@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import AboutBody from "~/components/about-body";
+import Footer from "~/components/footer";
 import Navbar from "~/components/navbar";
 
 export const meta: MetaFunction = () => {
@@ -17,6 +18,7 @@ export default function Index() {
     <div className="flex flex-col mx-auto w-[514px] py-[160px] bg-neutral-900 h-screen">
       <Navbar />
       <AboutBody />
+      <Footer />
     </div>
   );
 }
