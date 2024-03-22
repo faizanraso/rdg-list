@@ -4,12 +4,12 @@ export default function AboutBody() {
   return (
     <main className="pt-12 pb-4 tracking-wide">
       <div className="text-justify py-2.5">
-        <div className="py-1">
+        <div className="py-1.5">
           <p className="leading-relaxed text-neutral-200 text-sm">
             (Reading List) rdg-list
           </p>
         </div>
-        <div className="py-1">
+        <div className="py-1.5">
           <p className="leading-relaxed text-neutral-400 text-sm font-light">
             A simple web app that serves as a home for all of your internet
             finds. Whether it's an article you want to finish reading later, a
@@ -20,12 +20,12 @@ export default function AboutBody() {
         </div>
       </div>
       <div className="text-justify py-2.5">
-        <div className="py-1">
+        <div className="py-1.5">
           <p className="leading-relaxed text-neutral-200 text-sm">
             Inspiration
           </p>
         </div>
-        <div className="py-1">
+        <div className="py-1.5.5">
           <p className="leading-relaxed text-neutral-400 text-sm font-light">
             This app is heavily inspired by{" "}
             <a href={"https://bmrks.com/"} className="underline italic">
@@ -38,10 +38,10 @@ export default function AboutBody() {
         </div>
       </div>
       <div className="text-justify py-2.5">
-        <div className="py-1">
+        <div className="py-1.5">
           <p className="leading-relaxed text-neutral-200 text-sm">Usage</p>
         </div>
-        <div className="py-1">
+        <div className="py-1.5.5">
           <p className="leading-relaxed text-neutral-400 text-sm font-light">
             This app is free to use. To get started, create an account using the
             "login" link above. Additionally,{" "}
@@ -57,15 +57,15 @@ export default function AboutBody() {
         </div>
       </div>
       <div className="text-justify py-2.5">
-        <div className="py-1">
+        <div className="py-1.5">
           <p className="leading-relaxed text-neutral-200 text-sm">Credits</p>
         </div>
-        <div className="py-1">
+        <div className="py-1.5">
           <p className="leading-relaxed text-neutral-400 text-sm font-light">
-            <ul className="flex flex-row gap-x-4">
+            <ul className="flex flex-row justify-between gap-x-4">
               <li>
                 <a href="https://lucide.dev/license" className="underline">
-                  Lucide License
+                  Lucide License (Icons)
                 </a>
               </li>
               <li>
@@ -73,7 +73,12 @@ export default function AboutBody() {
                   href="https://github.com/iconoir-icons/iconoir/blob/main/LICENSE"
                   className="underline"
                 >
-                  Iconair License
+                  Iconair License (Icons)
+                </a>
+              </li>
+              <li>
+                <a href="https://bmrks.com/" className="underline">
+                  bmrks (Inspiration)
                 </a>
               </li>
             </ul>
