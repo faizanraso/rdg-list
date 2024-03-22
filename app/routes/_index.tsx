@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
-import AboutBody from "~/components/about-body";
-import Footer from "~/components/footer";
-import Navbar from "~/components/navbar";
+import AboutBody from "~/components/home/about-body";
+import Footer from "~/components/home/footer";
+import Navbar from "~/components/home/navbar";
 
 export const meta: MetaFunction = () => {
   return [
