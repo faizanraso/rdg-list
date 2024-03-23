@@ -11,7 +11,7 @@ export default function AboutBody() {
           </p>
         </div>
         <div className="py-1.5">
-          <p className="leading-relaxed text-neutral-400 text-sm">
+          <p className="leading-relaxed text-neutral-400 text-sm duration-150 transition">
             A simple web app that serves as a home for all of your internet
             finds. Whether it's an article you want to finish reading later, a
             regex tutorial you plan on coming back to one day, or anything in
@@ -29,7 +29,10 @@ export default function AboutBody() {
         <div className="py-1.5.5">
           <p className="leading-relaxed text-neutral-400 text-sm">
             This app is heavily inspired by{" "}
-            <a href={"https://bmrks.com/"} className="underline italic">
+            <a
+              href={"https://bmrks.com/"}
+              className="underline hover:text-neutral-300 italic"
+            >
               bmrks.com
             </a>
             . I've pretty much borrowed the whole concept and style from it. But
@@ -48,7 +51,7 @@ export default function AboutBody() {
             "login" link above. Additionally, rdg-list is{" "}
             <a
               href="https://github.com/faizanraso/rdg-list"
-              className="underline"
+              className="underline hover:text-neutral-300 duration-150 transition"
             >
               open source
             </a>
@@ -64,7 +67,7 @@ export default function AboutBody() {
           <div>
             <Link
               to="https://lucide.dev/license"
-              className="underline leading-relaxed"
+              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed"
             >
               Lucide License (Icons)
             </Link>
@@ -73,13 +76,16 @@ export default function AboutBody() {
             {" "}
             <Link
               to="https://github.com/iconoir-icons/iconoir/blob/main/LICENSE"
-              className="underline leading-relaxed"
+              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed"
             >
               Iconair License (Icons)
             </Link>
           </div>
           <div>
-            <Link to="https://bmrks.com/" className="underline leading-relaxed">
+            <Link
+              to="https://bmrks.com/"
+              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed"
+            >
               bmrks (Inspiration)
             </Link>
           </div>
