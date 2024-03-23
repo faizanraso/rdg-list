@@ -6,8 +6,7 @@ import NavBar from "~/components/home/navbar";
 export const meta: MetaFunction = () => {
   return [
     {
-      title:
-        "Reading List - A place to store the things you want to check out later.",
+      title: "rdg-list - welcome",
     },
     { name: "Welcome Page", content: "Welcome to rdg-list!" },
   ];

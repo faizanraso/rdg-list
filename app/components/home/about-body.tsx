@@ -1,4 +1,5 @@
-import React from"react";
+import { Link } from "@remix-run/react";
+import React from "react";
 
 export default function AboutBody() {
   return (
@@ -44,8 +45,7 @@ export default function AboutBody() {
         <div className="py-1.5.5">
           <p className="leading-relaxed text-neutral-400 text-sm">
             This app is free to use. To get started, create an account using the
-           "login" link above. Additionally,{" "}
-            <span className="font-medium">rdg-list</span> is{" "}
+            "login" link above. Additionally, rdg-list is{" "}
             <a
               href="https://github.com/faizanraso/rdg-list"
               className="underline"
@@ -60,35 +60,29 @@ export default function AboutBody() {
         <div className="py-1.5">
           <p className="leading-relaxed text-neutral-200 text-sm">Credits</p>
         </div>
-        <div className="py-1.5">
-          <p className="text-neutral-400 text-sm">
-            <ul className="flex flex-row justify-between gap-x-4">
-              <li>
-                <a
-                  href="https://lucide.dev/license"
-                  className="underline leading-relaxed"
-                >
-                  Lucide License (Icons)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/iconoir-icons/iconoir/blob/main/LICENSE"
-                  className="underline leading-relaxed"
-                >
-                  Iconair License (Icons)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://bmrks.com/"
-                  className="underline leading-relaxed"
-                >
-                  bmrks (Inspiration)
-                </a>
-              </li>
-            </ul>
-          </p>
+        <div className="flex flex-row py-1.5 justify-between text-neutral-400 text-sm">
+          <div>
+            <Link
+              to="https://lucide.dev/license"
+              className="underline leading-relaxed"
+            >
+              Lucide License (Icons)
+            </Link>
+          </div>
+          <div>
+            {" "}
+            <Link
+              to="https://github.com/iconoir-icons/iconoir/blob/main/LICENSE"
+              className="underline leading-relaxed"
+            >
+              Iconair License (Icons)
+            </Link>
+          </div>
+          <div>
+            <Link to="https://bmrks.com/" className="underline leading-relaxed">
+              bmrks (Inspiration)
+            </Link>
+          </div>
         </div>
       </div>
     </main>
