@@ -1,5 +1,8 @@
 import { Link } from "@remix-run/react";
 
+import { Input } from "~/components/ui/input";
+import { Label } from "~/components/ui/label";
+
 export default function LoginForm() {
   return (
     <main className="py-20 items-center justify-center flex flex-col">
@@ -17,8 +20,35 @@ export default function LoginForm() {
             </p>
           </div>
         </div>
-        <div>
-          
+        <div className="py-4">
+          <div className="grid w-full max-w-sm items-center gap-y-1.5 pb-2">
+            <Label
+              htmlFor="email"
+              className="text-neutral-400 font-normal leading-relaxed"
+            >
+              Email
+            </Label>
+            <Input
+              type="email"
+              id="email"
+              placeholder="Email"
+              className=" placeholder:text-neutral-700 text-neutral-700 focus-visible:text-neutral-400 rounded leading-relaxed focus-visible:ring-neutral-400"
+            />
+          </div>
+          <div className="grid w-full max-w-sm items-center gap-y-1.5 py-2">
+            <Label
+              htmlFor="password"
+              className="text-neutral-400 font-normal leading-relaxed"
+            >
+              Password
+            </Label>
+            <Input
+              type="password"
+              id="password"
+              placeholder="••••••••"
+              className="placeholder:text-neutral-700 text-neutral-700 focus-visible:text-neutral-400 rounded leading-relaxed focus-visible:ring-neutral-400"
+            />
+          </div>
         </div>
       </div>
     </main>
