@@ -6,12 +6,12 @@ export default function AboutBody() {
     <main className="pt-12 pb-4">
       <div className="text-justify py-2.5">
         <div className="py-1.5">
-          <p className="leading-relaxed text-neutral-200 text-sm">
+          <p className="leading-relaxed tracking-wide font-light text-neutral-200 text-sm">
             (Reading List) rdg-list
           </p>
         </div>
         <div className="py-1.5">
-          <p className="leading-relaxed text-neutral-400 text-sm duration-150 transition">
+          <p className="leading-relaxed tracking-wide font-light text-neutral-400 text-sm duration-150 transition">
             A simple web app that serves as a home for all of your internet
             finds. Whether it's an article you want to finish reading later, a
             regex tutorial you plan on coming back to one day, or anything in
@@ -22,12 +22,12 @@ export default function AboutBody() {
       </div>
       <div className="text-justify py-2.5">
         <div className="py-1.5">
-          <p className="leading-relaxed text-neutral-200 text-sm">
+          <p className="leading-relaxed tracking-wide font-light text-neutral-200 text-sm">
             Inspiration
           </p>
         </div>
         <div className="py-1.5.5">
-          <p className="leading-relaxed text-neutral-400 text-sm">
+          <p className="leading-relaxed tracking-wide font-light text-neutral-400 text-sm">
             This app is heavily inspired by{" "}
             <a
               href={"https://bmrks.com/"}
@@ -43,10 +43,12 @@ export default function AboutBody() {
       </div>
       <div className="text-justify py-2.5">
         <div className="py-1.5">
-          <p className="leading-relaxed text-neutral-200 text-sm">Usage</p>
+          <p className="leading-relaxed tracking-wide font-light text-neutral-200 text-sm">
+            Usage
+          </p>
         </div>
         <div className="py-1.5.5">
-          <p className="leading-relaxed text-neutral-400 text-sm">
+          <p className="leading-relaxed tracking-wide font-light text-neutral-400 text-sm">
             This app is free to use. To get started, create an account using the
             "login" link above. Additionally, rdg-list is{" "}
             <a
@@ -61,13 +63,15 @@ export default function AboutBody() {
       </div>
       <div className="text-justify py-2.5">
         <div className="py-1.5">
-          <p className="leading-relaxed text-neutral-200 text-sm">Credits</p>
+          <p className="leading-relaxed tracking-wide font-light text-neutral-200 text-sm">
+            Credits
+          </p>
         </div>
         <div className="flex flex-row py-1.5 justify-between text-neutral-400 text-sm">
           <div>
             <Link
               to="https://lucide.dev/license"
-              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed"
+              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed tracking-wide font-light"
             >
               Lucide License (Icons)
             </Link>
@@ -76,7 +80,7 @@ export default function AboutBody() {
             {" "}
             <Link
               to="https://github.com/iconoir-icons/iconoir/blob/main/LICENSE"
-              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed"
+              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed tracking-wide font-light"
             >
               Iconair License (Icons)
             </Link>
@@ -84,7 +88,7 @@ export default function AboutBody() {
           <div>
             <Link
               to="https://bmrks.com/"
-              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed"
+              className="underline hover:text-neutral-300 duration-150 transition leading-relaxed tracking-wide font-light"
             >
               bmrks (Inspiration)
             </Link>
