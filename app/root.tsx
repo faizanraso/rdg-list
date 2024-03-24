@@ -12,6 +12,7 @@ import {
 } from "@remix-run/react";
 
 import "~/tailwind.css";
+import { cn } from "./lib/utils";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),

@@ -1,9 +1,8 @@
 import { Link } from "@remix-run/react";
-import { Icons } from "../ui/icons";
 
 export default function NavBar() {
   return (
-    <nav className="flex flex-row items-center justify-between">
+    <nav className="flex flex-row items-center sticky">
       <Link to={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,22 +24,6 @@ export default function NavBar() {
           <path d="M16 12h2" />
         </svg>
       </Link>
-
-      <div className="gap-x-4 flex flex-row">
-        <Link
-          to="https://github.com/faizanraso/rdg-list"
-          className="text-neutral-400 hover:text-neutral-300 border-0 transition duration-150"
-        >
-          <Icons.gitHub className="h-4 w-4" />
-        </Link>
-
-        <Link
-          to="/login"
-          className="text-xs underline text-neutral-400 hover:text-neutral-300 transition duration-150"
-        >
-          Login
-        </Link>
-      </div>
     </nav>
   );
 }
