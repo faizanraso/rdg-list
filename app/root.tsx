@@ -1,7 +1,10 @@
 import { cssBundleHref } from "@remix-run/css-bundle";
+import type { LoaderFunction } from "@remix-run/node";
 import type { LinksFunction } from "@remix-run/node";
 import { SpeedInsights } from "@vercel/speed-insights/remix";
 import { Analytics } from "@vercel/analytics/react";
+import { ClerkApp, ClerkErrorBoundary } from "@clerk/remix";
+import { rootAuthLoader } from "@clerk/remix/ssr.server";
 import {
   Links,
   LiveReload,
@@ -16,6 +19,9 @@ import "~/tailwind.css";
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
+
+export const loader: LoaderFunction = (args) => rootAuthLoader(args);
+export const ErrorBoundary = ClerkErrorBoundary();
 
 export default function App() {
   return (

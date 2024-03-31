@@ -38,7 +38,7 @@ export default function LoginForm() {
               type="email"
               id="email"
               placeholder="Email"
-              className=" placeholder:text-neutral-700 text-neutral-700 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
+              className=" placeholder:text-neutral-700 border-neutral-700 text-neutral-400 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
             />
           </div>
           <div className="grid w-full max-w-sm items-center gap-y-2 py-3">
@@ -52,7 +52,7 @@ export default function LoginForm() {
               type="password"
               id="password"
               placeholder="••••••••"
-              className=" placeholder:text-neutral-700 text-neutral-700 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
+              className=" placeholder:text-neutral-700 border-neutral-700 text-neutral-400 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
             />
           </div>
           <div className="grid w-full max-w-sm items-center py-3">
