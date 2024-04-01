@@ -89,6 +89,10 @@ export default function RegistrationForm() {
             </Button>
           </div>
         </Form>
+        <div className="py-4 flex flex-row justify-between items-center">
+          <p className="text-neutral-400 text-xs">rdg-list</p>
+          <p className="italic text-neutral-400 text-xs">v 0.01</p>
+        </div>
       </div>
     </main>
   );
