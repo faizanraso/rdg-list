@@ -8,7 +8,7 @@ export default function RegistrationForm() {
   return (
     <main className="py-20 items-center justify-center flex flex-col">
       <div className="max-w-[335px] w-full">
-        <div className="border-b border-neutral-800 py-4">
+        <div className="border-b border-neutral-800 py-2">
           <div className="py-0.5">
             <p className="text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
               Login
@@ -26,8 +26,8 @@ export default function RegistrationForm() {
             </p>
           </div>
         </div>
-        <Form className="py-4 border-b border-neutral-800">
-          <div className="grid w-full max-w-sm items-center gap-y-2 pb-3">
+        <Form className="py-2 border-neutral-800">
+          <div className="grid w-full max-w-sm items-center gap-y-2 pb-2">
             <Label
               htmlFor="name"
               className="text-neutral-400 font-normal leading-relaxed tracking-wide"
@@ -41,7 +41,7 @@ export default function RegistrationForm() {
               className=" placeholder:text-neutral-700 border-neutral-700 text-neutral-400 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
             />
           </div>
-          <div className="grid w-full max-w-sm items-center gap-y-2 py-3">
+          <div className="grid w-full max-w-sm items-center gap-y-2 py-2">
             <Label
               htmlFor="email"
               className="text-neutral-400 font-normal leading-relaxed tracking-wide"
@@ -55,7 +55,7 @@ export default function RegistrationForm() {
               className=" placeholder:text-neutral-700 border-neutral-700 text-neutral-400 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
             />
           </div>
-          <div className="grid w-full max-w-sm items-center gap-y-2 py-3">
+          <div className="grid w-full max-w-sm items-center gap-y-2 py-2">
             <Label
               htmlFor="password"
               className="text-neutral-400 font-normal leading-relaxed tracking-wide"
@@ -69,7 +69,7 @@ export default function RegistrationForm() {
               className="placeholder:text-neutral-700 border-neutral-700 text-neutral-400 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
             />
           </div>
-          <div className="grid w-full max-w-sm items-center gap-y-2 py-3">
+          <div className="grid w-full max-w-sm items-center gap-y-2 py-2">
             <Label
               htmlFor="confirm-password"
               className="text-neutral-400 font-normal leading-relaxed tracking-wide"
@@ -83,16 +83,12 @@ export default function RegistrationForm() {
               className="placeholder:text-neutral-700 border-neutral-700 text-neutral-400 focus-visible:text-neutral-400 rounded leading-relaxed tracking-wide font-light focus-visible:ring-neutral-400"
             />
           </div>
-          <div className="grid w-full max-w-sm items-center py-3">
+          <div className="grid w-full max-w-sm items-center py-2">
             <Button className="bg-neutral-800 rounded leading-relaxed tracking-wide font-light hover:opacity-80 hover:bg-neutral-800 text-neutral-300 shadow-sm py-4 text-sm duration-150 transition border border-neutral-700">
               Register
             </Button>
           </div>
         </Form>
-        <div className="py-4 flex flex-row justify-between items-center">
-          <p className="text-neutral-400 text-xs">rdg-list</p>
-          <p className="italic text-neutral-400 text-xs">v 0.01</p>
-        </div>
       </div>
     </main>
   );
